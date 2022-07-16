@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body>
+   <!--Header-->
+    <nav class="navbar bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand"> <img src="https://static.vecteezy.com/system/resources/previews/003/206/623/original/youtube-editorial-app-icon-free-vector.jpg"  class="logo" alt=""></a>
+          <form class="d-flex" role="search">
+            <input class="form-control w-75" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><img class="logo1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/800px-Search_Icon.svg.png" alt=""></button>
+          </form>
+        </div>
+      </nav>
+
+      <!-- sidebar -->
+    <div class="side-bar mt-4">
+        <a href="#" class="links active"><img src="https://thumbs.dreamstime.com/b/home-icon-house-symbol-button-flat-shape-building-logo-sign-black-silhouette-isolated-white-background-vector-illustration-196598896.jpg" alt="">Home</a>
+        <a href="#" class="links"><img src="https://yt3.ggpht.com/UD11_tq9YFPL2liuRO6PhiRvuhbHxDkH5tR3FnL_swt4tPKRgJeTrFDCXH_hB0M02NCvWLRkog=s900-c-k-c0x00ffffff-no-rj" alt="">explore</a>
+        <a href="#" class="links"><img src="https://static.thenounproject.com/png/2481186-200.png" alt="">subscription</a>
+        <hr class="seperator">
+        <a href="#" class="links"><img src="https://static.thenounproject.com/png/2481186-200.png" alt="">library</a>
+        <a href="#" class="links"><img src="data:image/png;base64,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" alt="">History</a>
+        <a href="#" class="links"><img src="https://icon-library.com/images/play-youtube-icon/play-youtube-icon-23.jpg" alt="">Your Video</a>
+        <a href="#" class="links"><img src="https://icon-library.com/images/later-icon/later-icon-20.jpg" alt="">watch Later</a>
+        <a href="#" class="links"><img src="https://banner2.cleanpng.com/20180204/luq/kisspng-thumb-signal-drawing-clip-art-thumbs-up-5a76bc760706f7.5778453515177309340288.jpg" alt="">Liked Videos</a>
+        <a href="#" class="links"><img src="" alt="">Show More</a>
+    </div>
+
+     
+    <!-- filters -->
+    <div class="filters">
+        <button class="filter-options active">all</button>
+        <button class="filter-options">CSS</button>
+        <button class="filter-options">web development</button>
+        <button class="filter-options">python</button>
+        <button class="filter-options">entertainment</button>
+        <button class="filter-options">marvel</button>
+        <button class="filter-options">javascript</button>
+        <button class="filter-options">artificial intelligence</button>
+        <button class="filter-options">machine learning</button>
+        <button class="filter-options">trending</button>
+    </div>
+
+    
+    <!-- videos -->
+    <div class="video-container">
+       
+    </div>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="./script.js"></script> 
+</body>
+</html>
